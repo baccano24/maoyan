@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册|猫眼电影</title>
+    <link rel="stylesheet" href="css/zhuce.css">
+</head>
+
+<body>
+    <div class="header_wrap">
+        <header>
+            <a href=""><img src="img/index_logo.png" alt=""></a>
+        </header>
+    </div>
+    <div class="main">
+        <div class="sjh">
+            <label for="">手机号</label>
+            <input id="tel" type="text">
+            <span id="tel_inner">注册成功后，全美团通用</span>
+        </div>
+        <div class="cjmm">
+            <label for="">创建密码</label>
+            <input id="pwd" type="password">
+            <span id="pwd_inner">注册成功后，全美团通用</span>
+        </div>
+        <div class="qrmm">
+            <label for="">确认密码</label>
+            <input id="pwd2" type="password">
+            <span id="pwd2_inner">注册成功后，全美团通用</span>
+        </div>
+        <div class="btn">同意以下协议并注册</div>
+        <a href="">《美团网用户协议》</a>
+    </div>
+    <footer>
+        <p>©meituan.com 京ICP证070791号 京公网安备11010502025545号</p>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var tel = document.getElementById("tel");
+        var pwd = document.getElementById("pwd");
+        var pwd2 = document.getElementById("pwd2");
+        var tel_inner = document.getElementById("tel_inner")
+        var pwd_inner = document.getElementById("pwd_inner")
+        var pwd2_inner = document.getElementById("pwd2_inner")
+        tel.onblur = function () {
+            var telreg = /^1\d{10}$/;
+            var telres = telreg.test(tel.value);
+            if (telres == true) { tel_inner.innerHTML = "正确" }
+            else { tel_inner.innerHTML = "请输入正确的11位手机号码" }
+        }
+        pwd.onblur = function () {
+            var pwdreg = /^\d{6}$/;
+            var pwdres = pwdreg.test(pwd.value);
+            if (pwdres == true) { pwd_inner.innerHTML = "正确"}
+            else{pwd_inner.innerHTML = "密码长度为六位"}
+        }
+        pwd2.onblur = function () {
+            if (pwd.value == pwd2.value) { pwd2_inner.innerHTML = "正确" }
+            else{pwd2_inner.innerHTML = "密码长度不一致"}
+        }
+    </script>
+</body>
+
+</html>

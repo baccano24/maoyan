@@ -1,0 +1,28 @@
+<?php
+echo '[
+    {"imgurl1":"img/index_movie1.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"疯狂的外星人"},
+    {"imgurl1":"img/index_movie2.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"飞驰人生"},
+    {"imgurl1":"img/index_movie3.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"死侍2：我爱..."},
+    {"imgurl1":"img/index_movie4.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"新喜剧之王"},
+    {"imgurl1":"img/index_movie5.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"流浪地球"},
+    {"imgurl1":"img/index_movie6.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"白蛇：缘起"},
+    {"imgurl1":"img/index_movie7.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"大黄蜂"},
+    {"imgurl1":"img/index_movie8.jpg",
+    "imgurl2":"img/index_bg.png",
+    "content":"密室逃生"}
+    ]';
+?>
